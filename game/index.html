@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember Run — a firefly's flight through the dark cavern</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #070a18;
+    height: 100%;
+    overflow: hidden;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  }
+  #wrap {
+    position: relative;
+    line-height: 0;
+  }
+  canvas {
+    display: block;
+    width: min(96vw, 1280px);
+    height: auto;
+    max-height: 96vh;
+    background: #0b1026;
+    border-radius: 10px;
+    box-shadow: 0 0 60px rgba(90, 70, 180, 0.35), 0 0 18px rgba(255, 170, 60, 0.12);
+  }
+  #hint {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -26px;
+    text-align: center;
+    color: #6f6a8f;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="600"></canvas>
+  <div id="hint">Arrows / WASD to fly &middot; P pause &middot; R restart &middot; click buttons work too</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
